@@ -62,7 +62,7 @@
 
 
 				<a href="index.html"><img id="logl" src="http://i.imgur.com/vjnvGlp.jpg" /></a>
-				<div id="stuck_container">
+				<div id="nav">
 					<header>
 						<div class="container">
 							<div class="row">
@@ -79,7 +79,7 @@
 											<li <li class="menuopt current" id="last-li"><a href="index.html">Home<strong></strong></a>
 												<li class="menuopt" id="last-li"><a href="about.html">About Me<strong></strong></a></li>
 												<li id="last-li" class="menuopt"><a href="discounts.html">Discounts<strong></strong></a></li>
-												<li id="last-li" class="menuopt"><a href="nutrition.html">Pet Nutrition<strong></strong></a></li>
+												<li id="last-li" class="menuopt"><a href="rates.html">Rates<strong></strong></a></li>
 												<li id="last-li" class="menuopt"><a href="contact.html">Contact<strong></strong></a></li>
 												<!--<li><a href="index-1.html"><span></span>Blog<strong></strong></a>
 											<ul class='submenu'>
@@ -134,26 +134,42 @@
 							<p class="txt5">We make being away from your pet <br>a little easier<br></p>
 							<p class="txt4">Licensed & Insured</p>
 							<p class="txt5">Rates DO NOT increase during the holidays. Book now!</p>
-							<p class="txt4">Located in Spokane Valley, WA</p>
-							<br>
-							<br>
+							<p class="txt4"> We are located in Spokane Valley, WA</p>
+		
+						</div>
+						<br><br>
+
+						<div id="descbubble">
 							<p class="txt4">Client Reviews</p>
-							<p class="txt5">"I recently hired Ariel to help with my two dogs, SoFi and Macy. Ariel was hired for a week and really did an outstanding job. I am SO thankful to have her Service."</p>
+							<p class="txt5">"I recently hired Ariel to help with my two dogs, SoFi and Macy. Ariel was hired for a week and really did an outstanding
+								job. I am SO thankful to have her Service."</p>
 							<p class="txt5" style="text-align: right">-Angela Y., Liberty Lake, WA</p>
-							<p class="txt5">"Ariel is a wonderful young lady and our doggies love her. She is the perfect pet/house sitter! We are so glad we have found her. She is absolutely wonderful!!! We would fully recommend her to anyone who wants a sitter who truly cares for your beloved pets."</p>
+							<p class="txt5">"Ariel is a wonderful young lady and our doggies love her. She is the perfect pet/house sitter! We are so glad we
+								have found her. She is absolutely wonderful!!! We would fully recommend her to anyone who wants a sitter who truly
+								cares for your beloved pets."</p>
 							<p class="txt5" style="text-align: right">-Ron R., Spokane Valley, WA</p>
-							<p class="txt5">"If you are looking for someone to care for your pets while you're away, or give your dogs walks during the day I can heartily recommend Ariel Wolfe of Wolfe Pack Pet Services.  Ariel has watched our pets, 2 dogs and 2 cats, several times over the last year while we traveled.  She is extremely conscientious and will take excellent care of your pets.  Ariel is more than reliable, she always goes above and beyond.  I know you will be very pleased with service from the Wolfe Pack."</p>
+							<p class="txt5">"If you are looking for someone to care for your pets while you're away, or give your dogs walks during the day I
+								can heartily recommend Ariel Wolfe of Wolfe Pack Pet Services. Ariel has watched our pets, 2 dogs and 2 cats, several
+								times over the last year while we traveled. She is extremely conscientious and will take excellent care of your pets.
+								Ariel is more than reliable, she always goes above and beyond. I know you will be very pleased with service from
+								the Wolfe Pack."</p>
 							<p class="txt5" style="text-align: right">-Francine B., Spokane, WA</p>
-							<p class="txt5">"I have been using Ariel Wolfe’s dog walking services (Wolfe Pack Pet Services) for two months now. Ariel has been providing excellent dog walking services. My dog takes awhile to warm up to new people. Ariel was willing to meet a few times in advance of services starting to ensure my dog was comfortable. Ariel has gone the extra mile. My dog had an accident in the house, and she cleaned it up with no hesitation. Also, if Ariel is able to, she spends a little longer with my dog than required. I would highly recommend Wolfe Pack Pet Services."</p>
+							<p class="txt5">"I have been using Ariel Wolfe’s dog walking services (Wolfe Pack Pet Services) for two months now. Ariel has been
+								providing excellent dog walking services. My dog takes awhile to warm up to new people. Ariel was willing to meet
+								a few times in advance of services starting to ensure my dog was comfortable. Ariel has gone the extra mile. My dog
+								had an accident in the house, and she cleaned it up with no hesitation. Also, if Ariel is able to, she spends a little
+								longer with my dog than required. I would highly recommend Wolfe Pack Pet Services."</p>
 							<p class="txt5" style="text-align: right">-Terri P., Spokane, WA</p>
-							<p class="txt5">"Ariel came to my house for an initial interview. She was very organized with her questions about the care I needed for my cats. Both of my cats came over to her during that initial visit, which is unusual for one of my very shy cat. Will definitely hire again."</p>
+							<p class="txt5">"Ariel came to my house for an initial interview. She was very organized with her questions about the care I needed
+								for my cats. Both of my cats came over to her during that initial visit, which is unusual for one of my very shy
+								cat. Will definitely hire again."</p>
 							<p class="txt5" style="text-align: right">-Jean D., Spokane, WA</p>
 							<br>
 							<br>
 							<p class="txt4" s><a style="border: 3px solid;border-radius: 6px;" href="contact.html">Contact us</a></p>
 
 						</div>
-
+						<br><br>
 
 					</div>
 				</div>
@@ -175,28 +191,25 @@
 				</div>
 			</footer>
 			<script type="text/javascript">
+				$(document).ready(function () {
+					// Initialize the gallery
+					$('.magnifier2').touchTouch();
+				});
 
 
-	 $(document).ready(function(){
-		// Initialize the gallery
-		$('.magnifier2').touchTouch();
-	 });
-
-
-	 function myFocus(element){
-					 if (element.value == element.defaultValue){
-							 element.focus();
-							 element.value = '';
-					 }
+				function myFocus(element) {
+					if (element.value == element.defaultValue) {
+						element.focus();
+						element.value = '';
+					}
 				}
-				function myBlur(element){
-					 if (element.value == ''){
-							 element.blur();
-							 element.value = element.defaultValue;
-					 }
+				function myBlur(element) {
+					if (element.value == '') {
+						element.blur();
+						element.value = element.defaultValue;
+					}
 				}
-
-</script>
+			</script>
 </body>
 
 </html>
